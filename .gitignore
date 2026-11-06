@@ -43,3 +43,4 @@ example
 /android
 
 commands.md
+.claude/settings.local.json
