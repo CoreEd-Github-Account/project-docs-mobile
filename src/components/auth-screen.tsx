@@ -148,10 +148,10 @@ export function AuthScreen({ mode }: { mode: 'login' | 'register' }) {
                     disabled={pending}
                     onPress={() => { setRecoveryExpanded(value => !value); setShowRecoveryKey(false); }}
                     style={{ minHeight: 44, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
-                    <Text style={{ color: colors.accent, fontSize: 12, fontWeight: '500', flexShrink: 1 }}>Recovery Key (Optional)</Text>
+                    <Text style={{ color: colors.accent, opacity: 0.85, fontSize: 12, fontWeight: '500', flexShrink: 1 }}>Recovery Key (Optional)</Text>
                     <View accessible={false} style={{ width: 12, height: 22, alignItems: 'center', justifyContent: 'center' }}>
                       <View style={{ width: 7, height: 7, borderRightWidth: 1.5, borderBottomWidth: 1.5,
-                        borderColor: colors.accent, transform: [{ rotate: recoveryExpanded ? '225deg' : '45deg' }] }} />
+                        borderColor: colors.accent, opacity: 0.85, transform: [{ rotate: recoveryExpanded ? '225deg' : '45deg' }] }} />
                     </View>
                   </Pressable>
                   {recoveryExpanded && <View style={{ gap: 8 }}>
