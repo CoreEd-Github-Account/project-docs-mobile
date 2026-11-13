@@ -1,17 +1,8 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Redirect } from 'expo-router';
+import { AuthScreen } from '@/components/auth-screen';
+import { useAuth } from '@/providers/auth-provider';
 
-export default function Index() {
-  return (
-    <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
-    </View>
-  );
+export default function Login() {
+  const { session } = useAuth();
+  return session ? <Redirect href="/welcome" /> : <AuthScreen mode="login" />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

@@ -44,3 +44,10 @@ example
 
 commands.md
 .claude/settings.local.json
+
+# Local restore points
+/backups/
+
+.env
+*.patch
+assets/Temporary reference image/

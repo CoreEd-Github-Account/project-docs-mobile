@@ -1,5 +1,9 @@
 # Template Studio Mobile: Agent Instructions
 
+## Persistent owner instruction
+
+At the start of every session on this project, read this file before working. Work only in `project-docs-mobile`. The backend and database belong to the teacher and must not be changed. All sibling backend/web repositories, including `project-docs-main`, are read-only references. Do not modify backend code, database structure, or live data.
+
 This is an Expo / React Native mobile application. Prioritize mobile-first patterns, performance and cross-platform compatibility.
 
 ## 1. Project
